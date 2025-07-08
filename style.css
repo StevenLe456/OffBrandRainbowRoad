@@ -10,11 +10,19 @@ body {
     width: 100%;
     height: 100%;
 }
+span {
+    font-size: xx-large;
+    vertical-align: middle;
+    line-height: 2;
+}
+img {
+    object-fit: contain;
+}
 #gameCanvas {
     padding: 0%;
     margin: 0%;
     width: 100%;
-    height: 80%;
+    height: 70%;
     z-index: 1;
 }
 #stream {
@@ -34,9 +42,6 @@ body {
     object-fit: fill;
     top: 0;
     left: 0;
-}
-h1 {
-    text-align: center;
 }
 #game {
     padding: 0%;
@@ -58,44 +63,39 @@ h1 {
     margin: 0%;
     width: 40%;
     height: 100%;
+    text-align: center;
+    vertical-align: middle;
     order: 1;
-    display: flex;
-    flex-direction: row;
 }
-#up {
+#velocity1 {
     padding: 0%;
     margin: 0%;
-    width: 8%;
-    height: 100%;
-    order: 1;  
+    width: 100%;
+    height: 50%;
 }
-#down {
+#velocity2 {
     padding: 0%;
     margin: 0%;
-    width: 8%;
-    height: 100%;
-    order: 2;  
+    width: 100%;
+    height: 50%;
 }
-#lefty {
+#distance1 {
     padding: 0%;
     margin: 0%;
-    width: 8%;
-    height: 100%;
-    order: 3;  
+    width: 100%;
+    height: 50%;
 }
-#righty {
+#distance2 {
     padding: 0%;
     margin: 0%;
-    width: 8%;
-    height: 100%;
-    order: 4;  
+    width: 100%;
+    height: 50%;
 }
-#display {
+#display2 {
     padding: 0%;
     margin: 0%;
-    width: 8%;
+    width: 40%;
     height: 100%;
-    order: 5;  
 }
 #webcam {
     padding: 0%;
@@ -110,13 +110,15 @@ h1 {
     margin: 0%;
     width: 40%;
     height: 100%;
+    text-align: center;
+    vertical-align: middle;
     order: 3;
 }
 .vl {
     position: absolute;
     z-index: 2;
     border-left: 6px solid black;
-    height: 80%;
+    height: 70%;
     position: absolute;
     left: 50%;
     margin-left: -3px;
@@ -165,6 +167,7 @@ h1 {
     height: 98%;
     object-fit: fill;
     order: 3;
+    visibility: hidden;
 }
 #left {
     padding: 0%;
@@ -196,4 +199,52 @@ h1 {
     width: 20%;
     height: 20%;
     position: absolute;
+}
+#bottom {
+    padding: 0%;
+    margin: 0%;
+    width: 100%;
+    height: 10%;
+    display: flex;
+    flex-direction: row;
+}
+#up {
+    padding: 0%;
+    margin: 0%;
+    width: 12.5%;
+    height: 100%;
+    text-align: center;
+    vertical-align: middle;
+    font-size: large;
+    order: 1;
+}
+#lefty {
+    padding: 0%;
+    margin: 0%;
+    width: 12.5%;
+    height: 100%;
+    text-align: center;
+    vertical-align: middle;
+    font-size: large;
+    order: 2;
+}
+#down {
+    padding: 0%;
+    margin: 0%;
+    width: 12.5%;
+    height: 100%;
+    text-align: center;
+    vertical-align: middle;
+    font-size: large;
+    order: 3;
+}
+#righty {
+    padding: 0%;
+    margin: 0%;
+    width: 12.5%;
+    height: 100%;
+    text-align: center;
+    vertical-align: middle;
+    font-size: large;
+    order: 4;
 }
